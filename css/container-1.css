@@ -1,0 +1,153 @@
+.img-container-1 img {
+  max-width: 475px;
+}
+
+.container-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1440px;
+  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 120px;
+  margin-bottom: 140px;
+}
+
+.titulo-container-1 {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 60px;
+  position: relative;
+}
+
+.titulo-container-1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 10px;
+  height: 40px;
+  background: linear-gradient(#fea300, #f52c00);
+  top: 9px;
+  left: -20px;
+}
+
+.paragrafo-container-1 {
+  font-size: 1.5rem;
+  max-width: 40ch;
+  color: #171827;
+  line-height: 2.1rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.paragrafo-container-1 strong {
+  font-weight: 900;
+}
+
+.paragrafo-container-1::after {
+  content: url(../src/detalhe-dots.svg);
+  display: block;
+  position: absolute;
+  right: -250px;
+  bottom: -120px;
+}
+
+@media (max-width: 1820px) {
+  .container-1 {
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 80px;
+    margin-bottom: 100px;
+  }
+
+  .paragrafo-container-1::after {
+    right: -120px;
+    bottom: -120px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .titulo-container-1 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+  .titulo-container-1::before {
+    top: 4px;
+  }
+
+  .paragrafo-container-1 {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+
+  .container-1 {
+    gap: 135px;
+  }
+}
+
+@media (max-width: 1366px) {
+  .paragrafo-container-1::after {
+    right: -70px;
+    bottom: -120px;
+  }
+}
+
+@media (max-width: 1136px) {
+  .titulo-container-1 {
+    font-size: 2.25rem;
+    margin-bottom: 30px;
+    position: relative;
+  }
+
+  .paragrafo-container-1 {
+    font-size: 1.2rem;
+    line-height: 1.68rem;
+  }
+
+  .paragrafo-container-1::after {
+    display: none;
+  }
+
+  .img-container-1 img {
+    max-width: 375px;
+  }
+}
+
+@media (max-width: 950px) {
+  .container-1 {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 80px;
+    margin-top: 60px;
+  }
+
+  .img-container-1 {
+    order: 2;
+  }
+
+  .texto-container-1 {
+    order: 1;
+  }
+}
+
+@media (max-width: 450px) {
+  .titulo-container-1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  .titulo-container-1::before {
+    top: 0px;
+  }
+
+  .paragrafo-container-1 {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .img-container-1 img {
+    max-width: 275px;
+  }
+}
