@@ -84,9 +84,6 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
-
-  .container-1 {
-  }
 }
 
 @media (max-width: 1366px) {
@@ -141,6 +138,13 @@
 
   .texto-container-1 {
     order: 1;
+  }
+
+  .titulo-container-1::before {
+    height: 30px;
+    width: 7px;
+    top: 7px;
+    left: -14px;
   }
 }
 
