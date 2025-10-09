@@ -54,8 +54,8 @@
 
 @media (max-width: 1820px) {
   .container-1 {
-    padding-left: 100px;
-    padding-right: 100px;
+    padding-left: 80px;
+    padding-right: 80px;
     margin-top: 80px;
     margin-bottom: 100px;
   }
@@ -83,7 +83,6 @@
   }
 
   .container-1 {
-    gap: 135px;
   }
 }
 
@@ -94,7 +93,7 @@
   }
 }
 
-@media (max-width: 1136px) {
+@media (max-width: 1280px) {
   .titulo-container-1 {
     font-size: 2.25rem;
     margin-bottom: 30px;
@@ -107,11 +106,21 @@
   }
 
   .paragrafo-container-1::after {
-    display: none;
+    bottom: -90px;
   }
 
   .img-container-1 img {
-    max-width: 375px;
+    max-width: 355px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .paragrafo-container-1::after {
+    display: none;
+  }
+
+  .container-1 {
+    gap: 100px;
   }
 }
 
