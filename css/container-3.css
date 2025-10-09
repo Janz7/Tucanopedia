@@ -1,40 +1,47 @@
 @import url("https://fonts.googleapis.com/css2?family=Mina:wght@400;700&family=Montserrat+Alternates:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
-.img-container-1 img {
+.img-container-3 img {
   max-width: 475px;
 }
 
-.container-1 {
+.container-3 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   max-width: 1440px;
   margin: 0 auto;
-  justify-content: center;
-  align-items: center;
+  padding-left: 100px;
+  padding-right: 100px;
   margin-top: 120px;
   margin-bottom: 160px;
 }
 
-.titulo-container-1 {
+.titulo-container-3 {
+  grid-column: 1/-1;
+  justify-self: center;
+}
+
+.titulo-container-3 h1 {
   font-family: "Montserrat Alternates";
   font-size: 3rem;
   font-weight: 600;
-  margin-bottom: 60px;
+  margin-bottom: 130px;
   position: relative;
+  color: #080811;
 }
 
-.titulo-container-1::before {
-  content: "";
+.titulo-container-3 h1::before {
+  content: url(../src/icone-tucano-colorido.svg);
   display: block;
   position: absolute;
-  width: 10px;
-  height: 40px;
-  background: linear-gradient(#fea300, #f52c00);
-  top: 9px;
-  left: -20px;
+  top: 7px;
+  left: -60px;
 }
 
-.paragrafo-container-1 {
+.texto-container-3 {
+  align-self: center;
+}
+
+.paragrafo-container-3 {
   font-size: 1.5rem;
   max-width: 40ch;
   color: #171827;
@@ -43,11 +50,11 @@
   position: relative;
 }
 
-.paragrafo-container-1 strong {
+.paragrafo-container-3 strong {
   font-weight: 900;
 }
 
-.paragrafo-container-1::after {
+.paragrafo-container-3::after {
   content: url(../src/detalhe-dots.svg);
   display: block;
   position: absolute;
@@ -56,114 +63,112 @@
 }
 
 @media (max-width: 1820px) {
-  .container-1 {
+  .container-3 {
     padding-left: 80px;
     padding-right: 80px;
-    margin-top: 80px;
-    margin-bottom: 100px;
+    margin-top: 100px;
+    margin-bottom: 140px;
   }
 
-  .paragrafo-container-1::after {
+  .paragrafo-container-3::after {
     right: -120px;
     bottom: -120px;
   }
 }
 
 @media (max-width: 1450px) {
-  .titulo-container-1 {
+  .titulo-container-3 h1 {
     font-size: 2.5rem;
     margin-bottom: 40px;
     position: relative;
   }
 
-  .titulo-container-1::before {
-    top: 4px;
+  .titulo-container-3 h1::before {
+    top: 0px;
   }
 
-  .paragrafo-container-1 {
+  .paragrafo-container-3 {
     font-size: 1.25rem;
     line-height: 1.75rem;
+    max-width: 40ch;
   }
 }
 
 @media (max-width: 1366px) {
-  .paragrafo-container-1::after {
+  .paragrafo-container-3::after {
     right: -70px;
     bottom: -120px;
   }
 }
 
 @media (max-width: 1280px) {
-  .titulo-container-1 {
+  .titulo-container-3 h1 {
     font-size: 2.25rem;
-    margin-bottom: 30px;
+    margin-bottom: 80px;
     position: relative;
   }
 
-  .paragrafo-container-1 {
+  .paragrafo-container-3 {
     font-size: 1.2rem;
     line-height: 1.68rem;
   }
 
-  .paragrafo-container-1::after {
+  .paragrafo-container-3::after {
     bottom: -90px;
   }
 
-  .img-container-1 img {
+  .img-container-3 img {
     max-width: 355px;
   }
 }
 
 @media (max-width: 1100px) {
-  .paragrafo-container-1::after {
+  .paragrafo-container-3::after {
     display: none;
   }
 
-  .container-1 {
+  .titulo-container-3 h1 {
+    margin-bottom: 0px;
+  }
+
+  .container-3 {
     gap: 100px;
   }
 }
 
 @media (max-width: 950px) {
-  .container-1 {
+  .container-3 {
     grid-template-columns: 1fr;
     justify-items: center;
     gap: 80px;
     margin-top: 60px;
   }
 
-  .img-container-1 {
+  .img-container-3 {
     order: 2;
   }
 
-  .texto-container-1 {
+  .texto-container-3 {
     order: 1;
-  }
-
-  .titulo-container-1::before {
-    height: 30px;
-    width: 7px;
-    top: 7px;
-    left: -14px;
   }
 }
 
 @media (max-width: 450px) {
-  .titulo-container-1 {
+  .titulo-container-3 h1 {
     font-size: 2rem;
     margin-bottom: 25px;
   }
 
-  .titulo-container-1::before {
+  .titulo-container-3::before {
     top: 3px;
   }
 
-  .paragrafo-container-1 {
+  .paragrafo-container-3 {
     font-size: 1rem;
     line-height: 1.5rem;
   }
 
-  .img-container-1 img {
+  .img-container-3 img {
     max-width: 275px;
   }
 }
