@@ -105,6 +105,7 @@
   .container-3 {
     margin-top: 70px;
     margin-bottom: 100px;
+    gap: 30px 0px;
   }
 
   .titulo-container-3 h1 {
@@ -137,7 +138,7 @@
   }
 
   .container-3 {
-    gap: 0px 100px;
+    gap: 50px 100px;
   }
 }
 
