@@ -43,6 +43,13 @@ nav ul {
   color: #ffe5b8;
   padding: 10px 25px;
   border-radius: 0px 8px 0px 8px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
+  transition: 0.3s;
+}
+
+.botao-galeria:hover {
+  box-shadow: none;
+  border-radius: 25px;
 }
 
 @media (max-width: 1280px) {
