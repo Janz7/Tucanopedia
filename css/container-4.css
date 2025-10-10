@@ -1,0 +1,214 @@
+.background-container-4 {
+  background-color: #171827;
+  position: relative;
+}
+
+.background-container-4::after {
+  content: url(../src/icone-tucano-colorido.svg);
+  display: block;
+  position: absolute;
+  bottom: 80px;
+  right: 100px;
+}
+
+.img-escolha {
+  max-width: 320px;
+  border-radius: 5px;
+}
+
+.container-4 {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-top: 110px;
+  padding-bottom: 200px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+.titulo-container-4 {
+  grid-column: 1/-1;
+  justify-self: center;
+  height: auto;
+  padding-bottom: 140px;
+}
+
+.titulo-container-4 h1 {
+  color: #f7f7f7;
+  font-family: "Montserrat Alternates", Arial, sans-serif;
+  font-weight: 500;
+  font-size: 3.5rem;
+}
+
+.lista-de-tucanos {
+  grid-column: 1/-1;
+  display: flex;
+  justify-content: center;
+  gap: 130px;
+}
+
+.titulo-escolha {
+  color: #f7f7f7;
+  font-family: "Montserrat Alternates", Arial, sans-serif;
+  font-weight: 600;
+  font-size: 1.5rem;
+  margin-top: 15px;
+}
+
+.especie-escolha {
+  display: inline-block;
+  color: #afb1b7;
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 10px;
+}
+
+.escolha-tucano a {
+  display: flex;
+  flex-direction: column;
+  text-align: start;
+}
+
+@media (max-width: 1820px) {
+  .container-4 {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 80px;
+  }
+
+  .background-container-4::after {
+    bottom: 80px;
+    right: 60px;
+  }
+}
+
+@media (max-width: 1580px) {
+  .img-escolha {
+    max-width: 290px;
+  }
+
+  .titulo-escolha {
+    font-size: 1.4rem;
+    margin-top: 15px;
+  }
+
+  .especie-escolha {
+    font-size: 1.15rem;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1460px) {
+  .img-escolha {
+    max-width: 230px;
+  }
+
+  .titulo-escolha {
+    font-size: 1.2rem;
+    margin-top: 15px;
+  }
+
+  .especie-escolha {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .titulo-container-4 {
+    grid-column: 1/-1;
+    justify-self: center;
+    height: auto;
+    padding-bottom: 140px;
+  }
+
+  .titulo-container-4 h1 {
+    font-weight: 500;
+    font-size: 2.8rem;
+  }
+
+  .lista-de-tucanos {
+    gap: 90px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .background-container-4::after {
+    display: none;
+  }
+
+  .lista-de-tucanos {
+    gap: 50px;
+  }
+}
+
+@media (max-width: 950px) {
+  .titulo-container-4 h1 {
+    font-size: 2.3rem;
+  }
+
+  .titulo-container-4 {
+    grid-column: 1/-1;
+    justify-self: center;
+    height: auto;
+    padding-bottom: 100px;
+  }
+
+  .lista-de-tucanos {
+    flex-direction: column;
+    grid-column: 2/3;
+  }
+
+  .img-escolha {
+    max-width: 320px;
+    border-radius: 5px;
+    margin-top: 15px;
+  }
+
+  .escolha-tucano a {
+    flex-direction: column-reverse;
+  }
+
+  .escolha-tucano {
+    justify-self: center;
+  }
+
+  .titulo-escolha {
+    font-size: 1.5rem;
+    margin-top: 15px;
+  }
+
+  .especie-escolha {
+    font-size: 1.25rem;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .img-escolha {
+    max-width: 250px;
+  }
+
+  .titulo-container-4 h1 {
+    font-size: 2.1rem;
+  }
+
+  .titulo-escolha {
+    font-size: 1.25rem;
+  }
+
+  .especie-escolha {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
+}
+
+@media (max-width: 380px) {
+  .container-4 {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
