@@ -10,8 +10,8 @@ footer {
   max-width: 1440px;
   margin: 0 auto;
   justify-items: center;
-  padding-bottom: 48px;
-  padding-top: 120px;
+  padding-top: 100px;
+  padding-bottom: 96px;
 }
 
 .paragrafo-coluna-1 {
@@ -22,14 +22,17 @@ footer {
 }
 
 .footer-copyright {
+  position: absolute;
   color: #838799;
   font-size: 1.5rem;
+  bottom: -40px;
 }
 
 .footer-coluna-1 {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 100px;
+  align-content: center;
+  position: relative;
 }
 
 .footer-coluna-2 {
@@ -40,13 +43,13 @@ footer {
 .footer-coluna-2 h2 {
   color: #575a70;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .footer-coluna-3 h2 {
   color: #575a70;
   text-transform: uppercase;
-  font-weight: 700;
+  font-weight: 900;
 }
 
 .lista-contatos li {
@@ -76,4 +79,128 @@ footer {
   gap: 36px;
   margin-top: 20px;
   padding-left: 35px;
+}
+
+.lista-contatos li {
+  position: relative;
+}
+
+.lista-contatos li::before {
+  content: "";
+  display: block;
+  width: 18px;
+  height: 6px;
+  background: linear-gradient(#fea300, #f52c00);
+  top: 14px;
+  left: -33px;
+  position: absolute;
+}
+
+@media (max-width: 1820px) {
+  .background-footer {
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+}
+
+@media (max-width: 1550px) {
+  .paragrafo-coluna-1 {
+    font-size: 1.3rem;
+    line-height: 2rem;
+  }
+
+  .footer-copyright {
+    font-size: 1.3rem;
+  }
+
+  .lista-contatos li {
+    color: #ffffff;
+    font-size: 1.3rem;
+  }
+
+  .links-do-site {
+    color: #afb1b7;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .footer-coluna-2 {
+    margin-left: 50px;
+  }
+
+  .footer-coluna-3 {
+    margin-left: 50px;
+  }
+}
+
+@media (max-width: 1160px) {
+  .paragrafo-coluna-1 {
+    font-size: 1.2rem;
+    line-height: 1.9rem;
+  }
+
+  .footer-copyright {
+    font-size: 1.1rem;
+  }
+
+  .lista-contatos li {
+    font-size: 1.1rem;
+  }
+
+  .links-do-site {
+    font-size: 0.8rem;
+  }
+
+  .lista-contatos li::before {
+    top: 9px;
+    left: -28px;
+  }
+}
+
+@media (max-width: 950px) {
+  footer {
+    grid-template-columns: 1fr;
+    gap: 80px;
+    justify-items: center;
+  }
+
+  .footer-coluna-1 {
+    text-align: center;
+  }
+
+  .footer-coluna-2 {
+    margin-left: 0px;
+  }
+
+  .footer-coluna-3 {
+    margin-left: 0px;
+    margin-bottom: 100px;
+  }
+
+  .footer-copyright {
+    bottom: -800px;
+    justify-self: center;
+    left: 80px;
+  }
+}
+
+@media (max-width: 480px) {
+  .footer {
+    padding-top: 0px;
+    padding-bottom: 0px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .footer-copyright {
+    position: initial;
+    justify-self: center;
+    order: 5;
+    margin-top: 30px;
+  }
 }
