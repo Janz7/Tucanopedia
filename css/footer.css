@@ -200,7 +200,6 @@ footer {
   .footer-copyright {
     position: initial;
     justify-self: center;
-    order: 5;
     margin-top: 30px;
   }
 }

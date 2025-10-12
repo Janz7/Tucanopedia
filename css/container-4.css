@@ -54,6 +54,7 @@
   font-weight: 600;
   font-size: 1.5rem;
   margin-top: 15px;
+  transition: all 0.3s ease;
 }
 
 .especie-escolha {
@@ -62,12 +63,30 @@
   font-size: 1.25rem;
   font-weight: 400;
   margin-top: 10px;
+  transition: all 0.3s ease;
 }
 
 .escolha-tucano a {
   display: flex;
   flex-direction: column;
   text-align: start;
+  transition: all 0.3s ease;
+}
+
+.img-escolha {
+  transition: transform 0.3s ease;
+}
+
+.escolha-tucano a:hover .img-escolha {
+  transform: scale(1.25);
+}
+
+.tucano-toco a:hover .especie-escolha {
+  transform: translate(25%, 50px);
+}
+
+.tucano-toco a:hover .titulo-escolha {
+  transform: translate(25%, 50px);
 }
 
 @media (max-width: 1820px) {
