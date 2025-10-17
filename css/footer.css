@@ -65,7 +65,7 @@ footer {
   justify-content: center;
 }
 
-.links-do-site {
+.links-do-site a {
   color: #afb1b7;
   font-size: 1.25rem;
   display: flex;
@@ -119,13 +119,24 @@ footer {
     font-size: 1.3rem;
   }
 
-  .links-do-site {
+  .links-do-site a {
     color: #afb1b7;
     font-size: 1rem;
     display: flex;
     flex-direction: column;
     gap: 12px;
     margin-top: 12px;
+  }
+
+  .lista-contatos li::before {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 4px;
+    background: linear-gradient(#fea300, #f52c00);
+    top: 12px;
+    left: -28px;
+    position: absolute;
   }
 }
 
@@ -153,7 +164,7 @@ footer {
     font-size: 1.1rem;
   }
 
-  .links-do-site {
+  .links-do-site a {
     font-size: 0.8rem;
   }
 

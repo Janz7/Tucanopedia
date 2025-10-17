@@ -84,15 +84,20 @@
   }
 }
 
+@media (max-width: 1550px) {
+  .titulo-container-1::before {
+    width: 7px;
+    height: 32px;
+    top: 5px;
+    left: -15px;
+  }
+}
+
 @media (max-width: 1450px) {
   .titulo-container-1 {
     font-size: 2.5rem;
     margin-bottom: 40px;
     position: relative;
-  }
-
-  .titulo-container-1::before {
-    top: 0px;
   }
 
   .paragrafo-container-1 {

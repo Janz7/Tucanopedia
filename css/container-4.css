@@ -148,6 +148,30 @@
     font-size: 1rem;
     margin-top: 10px;
   }
+
+  .tucano-toco a:hover .especie-escolha {
+    transform: translate(23%, 50px);
+  }
+
+  .tucano-toco a:hover .titulo-escolha {
+    transform: translate(23%, 50px);
+  }
+
+  .tucano-de-bico-verde a:hover .especie-escolha {
+    transform: translate(2%, 50px);
+  }
+
+  .tucano-de-bico-verde a:hover .titulo-escolha {
+    transform: translate(2%, 50px);
+  }
+
+  .tucano-de-bico-preto a:hover .especie-escolha {
+    transform: translate(2%, 50px);
+  }
+
+  .tucano-de-bico-preto a:hover .titulo-escolha {
+    transform: translate(2%, 50px);
+  }
 }
 
 @media (max-width: 1280px) {
