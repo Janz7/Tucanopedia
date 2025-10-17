@@ -90,19 +90,19 @@
 }
 
 .tucano-de-bico-verde a:hover .especie-escolha {
-  transform: translate(2%, 50px);
+  transform: translate(8%, 50px);
 }
 
 .tucano-de-bico-verde a:hover .titulo-escolha {
-  transform: translate(2%, 50px);
+  transform: translate(8%, 50px);
 }
 
 .tucano-de-bico-preto a:hover .especie-escolha {
-  transform: translate(2%, 50px);
+  transform: translate(8%, 50px);
 }
 
 .tucano-de-bico-preto a:hover .titulo-escolha {
-  transform: translate(2%, 50px);
+  transform: translate(8%, 50px);
 }
 
 @media (max-width: 1820px) {

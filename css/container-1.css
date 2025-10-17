@@ -2,6 +2,18 @@
   max-width: 475px;
 }
 
+.img-container-1 {
+  position: relative;
+}
+
+.img-container-1::before {
+  content: url(../src/decoracao-folhas.svg);
+  display: block;
+  position: absolute;
+  bottom: -150px;
+  left: -200px;
+}
+
 .container-1 {
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -46,7 +58,7 @@
 }
 
 .paragrafo-container-1::after {
-  content: url(../src/detalhe-dots.svg);
+  content: url(../src/decoracao-cinza.svg);
   display: block;
   position: absolute;
   right: -180px;
@@ -58,12 +70,17 @@
     padding-left: 80px;
     padding-right: 80px;
     margin-top: 80px;
-    margin-bottom: 100px;
+    margin-bottom: 140px;
   }
 
   .paragrafo-container-1::after {
     right: -120px;
     bottom: -120px;
+  }
+
+  .img-container-1::before {
+    bottom: -140px;
+    left: -140px;
   }
 }
 
@@ -119,6 +136,10 @@
 
   .container-1 {
     gap: 100px;
+  }
+
+  .img-container-1::before {
+    display: none;
   }
 }
 

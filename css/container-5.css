@@ -144,7 +144,7 @@
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .titulo-container-5 {
     margin-bottom: 40px;
   }
@@ -163,7 +163,7 @@
   }
 }
 
-@media (max-width: 390px) {
+@media (max-width: 400px) {
   .container-5 {
     padding-top: 60px;
     padding-bottom: 60px;

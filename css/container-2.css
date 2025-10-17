@@ -1,7 +1,7 @@
 .background-container-2 {
   background-color: #171827;
-  padding-top: 160px;
-  padding-bottom: 140px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .img-container-2 img {
@@ -46,6 +46,13 @@
 .paragrafo-container-2 strong {
   font-weight: 700;
   color: #ffffff;
+}
+
+.texto-colorido {
+  background-image: linear-gradient(#fea300, #f52c00);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 @media (max-width: 1820px) {
