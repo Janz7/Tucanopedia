@@ -129,24 +129,55 @@ footer {
   }
 
   .lista-contatos li::before {
-    content: "";
-    display: block;
     width: 12px;
     height: 4px;
-    background: linear-gradient(#fea300, #f52c00);
     top: 12px;
     left: -28px;
-    position: absolute;
   }
 }
 
 @media (max-width: 1280px) {
-  .footer-coluna-2 {
-    margin-left: 50px;
+  .paragrafo-coluna-1 {
+    font-size: 1.1rem;
+    line-height: 2rem;
   }
 
-  .footer-coluna-3 {
-    margin-left: 50px;
+  .footer-copyright {
+    font-size: 1.1rem;
+  }
+
+  .lista-contatos {
+    margin-top: 40px;
+  }
+
+  .links-do-site {
+    margin-top: 30px;
+  }
+
+  .lista-contatos li {
+    color: #ffffff;
+    font-size: 1.1rem;
+  }
+
+  .links-do-site a {
+    color: #afb1b7;
+    font-size: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 12px;
+  }
+  .footer-coluna-2 h2 {
+    font-size: 1.4rem;
+  }
+
+  .footer-coluna-3 h2 {
+    font-size: 1.4rem;
+  }
+
+  .lista-contatos li::before {
+    top: 10px;
+    left: -30px;
   }
 }
 
