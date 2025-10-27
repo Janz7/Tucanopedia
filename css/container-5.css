@@ -37,13 +37,14 @@
 }
 
 .botao-container-5 {
-  font-family: "Lato", Arial, sans-serif;
-  font-size: 1.2rem;
-  font-weight: 600;
+  font-family: "Roboto Flex", Arial, sans-serif;
+  font-size: 1.1rem;
+  font-weight: 500;
+  letter-spacing: 0.05rem;
   display: inline-block;
   text-transform: uppercase;
   background: linear-gradient(#fea300, #f52c00);
-  color: #8f0700;
+  color: #171827;
   padding: 10px 25px;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   transition: 0.3s;

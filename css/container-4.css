@@ -57,6 +57,10 @@
   transition: all 0.3s ease;
 }
 
+.titulo-escolha.menor {
+  font-size: 1.3rem;
+}
+
 .especie-escolha {
   display: inline-block;
   color: #afb1b7;
@@ -128,6 +132,10 @@
     margin-top: 15px;
   }
 
+  .titulo-escolha.menor {
+    font-size: 1rem;
+  }
+
   .especie-escolha {
     font-size: 1.15rem;
     margin-top: 10px;
@@ -144,6 +152,10 @@
     margin-top: 15px;
   }
 
+  .titulo-escolha.menor {
+    font-size: 1rem;
+  }
+
   .especie-escolha {
     font-size: 1rem;
     margin-top: 10px;
@@ -158,11 +170,11 @@
   }
 
   .tucano-de-bico-verde a:hover .especie-escolha {
-    transform: translate(2%, 50px);
+    transform: translate(4%, 50px);
   }
 
   .tucano-de-bico-verde a:hover .titulo-escolha {
-    transform: translate(2%, 50px);
+    transform: translate(4%, 50px);
   }
 
   .tucano-de-bico-preto a:hover .especie-escolha {
@@ -238,6 +250,10 @@
     margin-top: 15px;
   }
 
+  .titulo-escolha.menor {
+    font-size: 1rem;
+  }
+
   .especie-escolha {
     font-size: 1.25rem;
     margin-top: 10px;
@@ -283,6 +299,10 @@
 
   .titulo-escolha {
     font-size: 1.25rem;
+  }
+
+  .titulo-escolha.menor {
+    font-size: 0.9rem;
   }
 
   .especie-escolha {

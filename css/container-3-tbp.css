@@ -1,0 +1,204 @@
+.img-container-3-tbp img {
+  max-width: 475px;
+}
+
+.img-container-3-tbp {
+  position: relative;
+}
+
+.img-container-3-tbp::before {
+  content: url(../src/decoracao-folhas.svg);
+  display: block;
+  position: absolute;
+  bottom: -150px;
+  left: -200px;
+}
+
+.container-3-tbp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 80px;
+  margin-bottom: 160px;
+}
+
+.titulo-container-3-tbp {
+  grid-column: 1/-1;
+  justify-self: center;
+  height: auto;
+  margin-bottom: 80px;
+}
+
+.titulo-container-3-tbp h1 {
+  font-family: "Montserrat Alternates";
+  font-size: 3rem;
+  font-weight: 600;
+  position: relative;
+  color: #080811;
+}
+
+.texto-container-3-tbp {
+  align-self: center;
+}
+
+.paragrafo-container-3-tbp {
+  font-size: 1.5rem;
+  max-width: 40ch;
+  color: #171827;
+  line-height: 2.3rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.paragrafo-container-3-tbp strong {
+  font-weight: 900;
+}
+
+.paragrafo-container-3-tbp::after {
+  content: url(../src/decoracao-cinza.svg);
+  display: block;
+  position: absolute;
+  right: -180px;
+  bottom: -100px;
+}
+
+@media (max-width: 1820px) {
+  .container-3-tbp {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 100px;
+    margin-bottom: 180px;
+  }
+
+  .titulo-container-3-tbp {
+    margin-bottom: 90px;
+  }
+
+  .paragrafo-container-3-tbp::after {
+    right: -120px;
+    bottom: -120px;
+  }
+
+  .img-container-3-tbp::before {
+    bottom: -140px;
+    left: -140px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .titulo-container-3-tbp {
+    margin-bottom: 40px;
+  }
+
+  .titulo-container-3-tbp h1 {
+    font-size: 2.5rem;
+    position: relative;
+  }
+
+  .paragrafo-container-3-tbp {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    max-width: 40ch;
+  }
+}
+
+@media (max-width: 1366px) {
+  .paragrafo-container-3-tbp::after {
+    right: -70px;
+    bottom: -120px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container-3-tbp {
+    margin-top: 70px;
+    margin-bottom: 160px;
+    gap: 30px 0px;
+  }
+
+  .titulo-container-3-tbp {
+    margin-bottom: 50px;
+  }
+
+  .titulo-container-3-tbp h1 {
+    font-size: 2.25rem;
+    position: relative;
+  }
+
+  .paragrafo-container-3-tbp {
+    font-size: 1.2rem;
+    line-height: 1.68rem;
+  }
+
+  .paragrafo-container-3-tbp::after {
+    bottom: -90px;
+  }
+
+  .img-container-3-tbp img {
+    max-width: 355px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .paragrafo-container-3-tbp::after {
+    display: none;
+  }
+
+  .container-3-tbp {
+    gap: 50px 100px;
+  }
+
+  .img-container-3-tbp::before {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .container-3-tbp {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 60px;
+    gap: 0px 100px;
+  }
+
+  .img-container-3-tbp {
+    order: 2;
+    margin-top: 80px;
+  }
+
+  .texto-container-3-tbp {
+    order: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .titulo-container-3-tbp h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  .paragrafo-container-3-tbp {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .img-container-3-tbp img {
+    max-width: 275px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-3-tbp {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .paragrafo-container-3-tbp {
+    max-width: 30ch;
+  }
+}
