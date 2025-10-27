@@ -1,0 +1,221 @@
+.img-container-1-tbai img {
+  max-width: 475px;
+}
+
+.img-container-1-tbai {
+  position: relative;
+}
+
+.img-container-1-tbai::before {
+  content: url(../src/decoracao-folhas.svg);
+  display: block;
+  position: absolute;
+  bottom: -150px;
+  left: -200px;
+}
+
+.container-1-tbai {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1440px;
+  margin: 0 auto;
+  padding-left: 100px;
+  padding-right: 100px;
+  margin-top: 80px;
+  margin-bottom: 160px;
+}
+
+.titulo-container-1-tbai {
+  grid-column: 1/-1;
+  justify-self: center;
+  height: auto;
+  margin-bottom: 80px;
+}
+
+.titulo-container-1-tbai h1 {
+  font-family: "Montserrat Alternates";
+  font-size: 3rem;
+  font-weight: 600;
+  position: relative;
+  color: #080811;
+}
+
+.titulo-container-1-tbai h1::before {
+  content: url(../src/icone-tucano-colorido.svg);
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: -60px;
+}
+
+.texto-container-1-tbai {
+  align-self: center;
+}
+
+.paragrafo-container-1-tbai {
+  font-size: 1.5rem;
+  max-width: 40ch;
+  color: #171827;
+  line-height: 2.3rem;
+  font-weight: 400;
+  position: relative;
+}
+
+.paragrafo-container-1-tbai strong {
+  font-weight: 900;
+}
+
+.paragrafo-container-1-tbai::after {
+  content: url(../src/decoracao-cinza.svg);
+  display: block;
+  position: absolute;
+  right: -180px;
+  bottom: -100px;
+}
+
+@media (max-width: 1820px) {
+  .container-1-tbai {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin-top: 100px;
+    margin-bottom: 180px;
+  }
+
+  .titulo-container-1-tbai {
+    margin-bottom: 90px;
+  }
+
+  .paragrafo-container-1-tbai::after {
+    right: -120px;
+    bottom: -120px;
+  }
+
+  .img-container-1-tbai::before {
+    bottom: -140px;
+    left: -140px;
+  }
+}
+
+@media (max-width: 1450px) {
+  .titulo-container-1-tbai {
+    margin-bottom: 40px;
+  }
+
+  .titulo-container-1-tbai h1 {
+    font-size: 2.5rem;
+    position: relative;
+  }
+
+  .titulo-container-1-tbai h1::before {
+    top: 0px;
+  }
+
+  .paragrafo-container-1-tbai {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    max-width: 40ch;
+  }
+}
+
+@media (max-width: 1366px) {
+  .paragrafo-container-1-tbai::after {
+    right: -70px;
+    bottom: -120px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container-1-tbai {
+    margin-top: 70px;
+    margin-bottom: 160px;
+    gap: 30px 0px;
+  }
+
+  .titulo-container-1-tbai {
+    margin-bottom: 50px;
+  }
+
+  .titulo-container-1-tbai h1 {
+    font-size: 2.25rem;
+    position: relative;
+  }
+
+  .paragrafo-container-1-tbai {
+    font-size: 1.2rem;
+    line-height: 1.68rem;
+  }
+
+  .paragrafo-container-1-tbai::after {
+    bottom: -150px;
+    right: -100px;
+  }
+
+  .img-container-1-tbai img {
+    max-width: 355px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .paragrafo-container-1-tbai::after {
+    display: none;
+  }
+
+  .container-1-tbai {
+    gap: 50px 100px;
+  }
+
+  .img-container-1-tbai::before {
+    display: none;
+  }
+}
+
+@media (max-width: 950px) {
+  .container-1-tbai {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    margin-top: 60px;
+    gap: 0px 100px;
+  }
+
+  .img-container-1-tbai {
+    order: 2;
+    margin-top: 80px;
+  }
+
+  .texto-container-1-tbai {
+    order: 1;
+  }
+}
+
+@media (max-width: 500px) {
+  .titulo-container-1-tbai h1 {
+    font-size: 2rem;
+    margin-bottom: 25px;
+  }
+
+  .titulo-container-1-tbai h1::before {
+    display: none;
+  }
+
+  .paragrafo-container-1-tbai {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .img-container-1-tbai img {
+    max-width: 275px;
+  }
+}
+
+@media (max-width: 400px) {
+  .container-1-tbai {
+    padding-top: 60px;
+    padding-bottom: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .paragrafo-container-1-tbai {
+    max-width: 30ch;
+  }
+}
