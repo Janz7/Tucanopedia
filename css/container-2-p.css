@@ -62,10 +62,10 @@
   width: 7px;
   height: 7px;
   border-radius: 50%;
-  display: block;
+  display: none;
   position: absolute;
   background: linear-gradient(#fea300, #f52c00);
-  top: 10px;
+  top: 100px;
   left: -20px;
 }
 

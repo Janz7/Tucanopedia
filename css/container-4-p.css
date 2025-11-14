@@ -58,7 +58,7 @@
   display: block;
   position: absolute;
   background: linear-gradient(#fea300, #f52c00);
-  top: 10px;
+  top: 16px;
   left: -20px;
 }
 
@@ -98,6 +98,13 @@
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .paragrafos p:not(:first-child, :last-child)::before {
+    width: 5px;
+    height: 5px;
+    top: 14px;
+    left: -15px;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -130,6 +137,10 @@
     text-align: center;
     gap: 80px;
     margin-top: 0px;
+  }
+
+  .paragrafos p:not(:first-child, :last-child)::before {
+    display: none;
   }
 
   .background-container-4-p {
